@@ -12,8 +12,10 @@ def get_formatted_prediction(img_to_predict):
   return f"prediction: {prediction} probability: {probabilities[p_index]}"
 
 dj_prediction = get_formatted_prediction(load_path/'david_and_julie.jpg')
+ds_prediction = get_formatted_prediction(load_path/'david_solo.jpg')
 jh_prediction = get_formatted_prediction(load_path/'james_hoffmann.jpg')
 
 print(f"\nloading categories...\n{loaded_subculture_learn.dls.vocab}")
 print(f"\npredicting james hoffmann...\n{jh_prediction}")
 print(f"\npredicting david and Julie...\n{dj_prediction}\n")
+print(f"\npredicting david(solo)...\n{ds_prediction}\n")
