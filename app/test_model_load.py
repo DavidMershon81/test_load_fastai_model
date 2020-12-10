@@ -1,3 +1,7 @@
+#This script loads in a fast.ai classifier that I trained on colab
+#Then it prints out some predictions about if an image is goth or hipster
+#This was all set up to load into a docker container and run, even if the machine only has a CPU
+
 from fastai.vision.all import *
 load_path = Path(__file__).parent
 classifier_save_filename = 'subculture_classifier.pkl'
